@@ -1,0 +1,3 @@
+scp file <user>@<ip_server>:/path/to/dir
+scp -P <port> -r dirname <user>@<ip_server>:/path/to/dir
+scp -P <port> -i /path/key.priv -r dirname <user>@<ip_server>:/path/to/dir

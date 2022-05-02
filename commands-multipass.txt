@@ -1,0 +1,5 @@
+multipass launch --name servername --network en0 --network name=bridge0,mode=manual
+multipass exec servername -- ip -br address show scope global
+multipass info servername
+multipass launch --name myVM --mem 2G --disk 10G --cpus 2 impish
+

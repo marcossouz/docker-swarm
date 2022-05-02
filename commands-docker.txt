@@ -1,0 +1,6 @@
+sudo usermod -aG docker $USER
+docker build -t mrcsz/app-node:1.0 .
+docker run -it -v /home/ubuntu/volumes:/app ubunbu bash
+docker run -it --mount type=bind,source=/home/ubuntu/volumes,target=/app ubuntu bash
+docker run -it -v meu-volume:/app ubuntu bash
+cd /var/lib/docker/volumes/meu-volume/_data/
